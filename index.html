@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="index.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>test event</title>
+  </head>
+
+  <body id="body">
+    <h1>
+      <img
+        src="https://cdn.discordapp.com/attachments/937407559416029189/985451116768669706/logo_xd-bet1.png"
+        width="30%"
+        alt="logo_xd-bet1"
+      />
+      <!-- <br><br>
+  <input type="button" id="btnShare" style="width: 80%" class="button" value="แชร์กิจกรรม กดเลย.."> -->
+    </h1>
+
+    <fieldset>
+      <legend>ลงทะเบียน</legend>
+      <form action="/action_page2.php" method="POST">
+        <table>
+          <tr>
+            <th for="name">ชื่อ :</th>
+            <td><input type="text" id="name" name="name" /></td>
+          </tr>
+          <tr>
+            <th for="lname">เบอร์โทร :</th>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="080-123-4567"
+                pattern="[06,08,09]{2}[0-9]{1}[0-9]{3}[0-9]{4}"
+                required
+                value="0987654321"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th for="fname">ยูสเซอร์ :</th>
+            <td>
+              <input
+                type="text"
+                id="user"
+                name="user"
+                placeholder="xd7be... หรือ xd8be..."
+                pattern="[xd8be,xd7be]{5}[0-9]{8,9}"
+                required
+                value="xd?be123456789"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th for="fname">ธนาคาร :</th>
+            <td><input type="text" id="fname" name="fname" /></td>
+          </tr>
+          <tr>
+            <th for="fname">เลขบัญชี :</th>
+            <td><input type="text" id="fname" name="fname" /></td>
+          </tr>
+        </table>
+        <br />
+        <!-- <th><input type="submit" value="Submit"></th> -->
+        <th>
+          <input
+            type="submit"
+            formaction="/action_page2.php"
+            value="Submit as Admin"
+          />
+        </th>
+      </form>
+    </fieldset>
+
+    <!-- <br>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://cdn.discordapp.com/attachments/937331177008795648/985348933427560498/712062565.png" style="width: 80%">
+    <div class="text"></div>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://cdn.discordapp.com/attachments/937331177008795648/985348933905678356/813062565.png" style="width: 80%">
+      <div class="text"></div>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div> -->
+
+    <script src="index.js"></script>
+
+    <footer>
+      <!-- <script id="r-widget-script" src="https://rwidget.readyplanet.com/widget/widget.min.js?business_id=8a6a81836a09c54ffe14dc6fb9cc7410" type="text/javascript" charset="UTF-8"></script> -->
+
+      <button id="myTopBtn" title="Go to top" value="top">TOP</button>
+    </footer>
+  </body>
+</html>
